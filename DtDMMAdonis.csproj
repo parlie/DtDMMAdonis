@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\icons\black\download.png" />
+    <None Remove="assets\icons\black\left.png" />
+    <None Remove="assets\icons\black\right.png" />
+    <None Remove="assets\icons\black\view.png" />
+    <None Remove="assets\icons\white\download.png" />
+    <None Remove="assets\icons\white\left.png" />
+    <None Remove="assets\icons\white\right.png" />
+    <None Remove="assets\icons\white\view.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\icons\black\download.png" />
+    <Resource Include="assets\icons\black\left.png" />
+    <Resource Include="assets\icons\black\right.png" />
+    <Resource Include="assets\icons\black\view.png" />
+    <Resource Include="assets\icons\white\download.png" />
+    <Resource Include="assets\icons\white\left.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdonisUI" Version="1.17.1" />
+    <PackageReference Include="AdonisUI.ClassicTheme" Version="1.17.1" />
+    <PackageReference Include="MdXaml" Version="1.15.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\icons\white\right.png" />
+    <Resource Include="assets\icons\white\view.png" />
+  </ItemGroup>
+
+</Project>

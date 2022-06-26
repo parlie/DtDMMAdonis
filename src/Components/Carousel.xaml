@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="DtDMMAdonis.src.Components.Carousel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DtDMMAdonis.src.Components"
+             xmlns:adonisExtensions="clr-namespace:AdonisUI.Extensions;assembly=AdonisUI"
+             xmlns:adonisUi="clr-namespace:AdonisUI;assembly=AdonisUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Name="Self">
+    <Border BorderThickness="1" CornerRadius="8">
+        <Grid>
+            <Image
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Name="image"/>
+            <Button 
+                adonisExtensions:CornerRadiusExtension.CornerRadius="70"
+                adonisExtensions:CursorSpotlightExtension.RelativeSpotlightSize="0.1"
+                Height="64" Width="64"
+                HorizontalAlignment="Left" VerticalAlignment="Center"
+                Name="leftButton"
+                MouseEnter="Button_OnMouseEnter"
+                MouseLeave="Button_OnMouseLeave"
+                Margin="30,0,0,0" Click="leftButton_Click" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/icons/white/left.png"/>
+                </Button.Background>
+            </Button>
+            <Button 
+                adonisExtensions:CornerRadiusExtension.CornerRadius="70"
+                adonisExtensions:CursorSpotlightExtension.RelativeSpotlightSize="0.5"
+                MouseEnter="Button_OnMouseEnter"
+                MouseLeave="Button_OnMouseLeave"
+                Height="64" Width="64" 
+                HorizontalAlignment="Right" VerticalAlignment="Center"
+                Name="rightButton"
+                Margin="0,0,30,0" Click="rightButton_Click" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/assets/icons/white/right.png" />
+                </Button.Background>
+            </Button>
+
+        </Grid>
+    </Border>
+</UserControl>
